@@ -32,10 +32,15 @@ app.get(('/johncena'), (req, res) => {
     let john = `https://api.weatherapi.com/v1/current.json?key=${process.env.API_KEY}&days=3&q=Minnesota`;
     console.log(`processing GET request ${john}}`)
     if(req) {
-        Axios({
-            method: 'GET',
-            url: john
-        }).then((response) => {
+        // Axios({
+        //     method: 'GET',
+        //     url: john
+        // }).then((response) => {
+        //     res.send(response.data)
+        // }).catch(() => {
+        //     res.sendStatus(500)
+        // })
+        Axios.get((`${john}`)).then((response) => {
             res.send(response.data)
         }).catch(() => {
             res.sendStatus(500)
