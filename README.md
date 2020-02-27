@@ -66,3 +66,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+1. Create repository and branch to work on this application
+2. Install all the dependencies needed
+3. Sign up to access weather API to retrieve weather data: https://www.weatherapi.com/
+4. npx create-react-app app_name
+5. create components in the app
+6. create function to invoke Get http request
+7. set up the server to retrieve the request. Make sure to include Proxy in the package.json
+8. Set up router in the react app
+
